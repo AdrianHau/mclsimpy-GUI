@@ -276,7 +276,7 @@ class GUI(QtWidgets.QMainWindow):
         for i in range(0, len(t), 400):
             self.ax1.arrow(eta[0, i], eta[1, i], 0.1* np.cos(eta[5, i]), 0.1*np.sin(eta[5, i]), head_width=0.05, head_length=0.05)
 
-        # Confire the plot
+        # Configure the plot
         self.ax1.axis('equal')
         self.ax1.grid()
         self.ax1.set_xlabel('x [m]')
