@@ -632,3 +632,4 @@ class SimulationThread(QThread):
 app = QtWidgets.QApplication(sys.argv)
 window = GUI()
 sys.exit(app.exec())
+
