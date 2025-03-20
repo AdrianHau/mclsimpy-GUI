@@ -18,7 +18,7 @@
   </property>
   <property name="windowIcon">
    <iconset>
-    <normaloff>NTNU logo.svg</normaloff>NTNU logo.svg</iconset>
+    <normaloff>../../../.designer/backup/NTNU logo.svg</normaloff>../../../.designer/backup/NTNU logo.svg</iconset>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="QGroupBox" name="groupBox">
@@ -30,7 +30,7 @@
       <x>20</x>
       <y>170</y>
       <width>301</width>
-      <height>160</height>
+      <height>264</height>
      </rect>
     </property>
     <property name="font">
@@ -47,8 +47,46 @@
     <property name="checkable">
      <bool>false</bool>
     </property>
-    <layout class="QFormLayout" name="formLayout_2">
+    <layout class="QGridLayout" name="gridLayout">
      <item row="0" column="0">
+      <widget class="QLabel" name="label">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Sign. wave height H&lt;span style=&quot; vertical-align:sub;&quot;&gt;s &lt;/span&gt;[m]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="0" column="1">
+      <widget class="QLineEdit" name="Hs_ui">
+       <property name="text">
+        <string>2.5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="0">
+      <widget class="QLabel" name="label_2">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Peak period T&lt;span style=&quot; vertical-align:sub;&quot;&gt;p&lt;/span&gt; [s]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QLineEdit" name="Tp_ui">
+       <property name="text">
+        <string>5</string>
+       </property>
+      </widget>
+     </item>
+     <item row="2" column="0">
       <widget class="QLabel" name="label_3">
        <property name="font">
         <font>
@@ -60,7 +98,7 @@
        </property>
       </widget>
      </item>
-     <item row="0" column="1">
+     <item row="2" column="1">
       <widget class="QComboBox" name="wave_spectrum_ui">
        <item>
         <property name="text">
@@ -79,44 +117,6 @@
        </item>
       </widget>
      </item>
-     <item row="1" column="0">
-      <widget class="QLabel" name="label">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Sign. wave height H&lt;span style=&quot; vertical-align:sub;&quot;&gt;s &lt;/span&gt;[m]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </item>
-     <item row="1" column="1">
-      <widget class="QLineEdit" name="Hs_ui">
-       <property name="text">
-        <string>2.5</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="0">
-      <widget class="QLabel" name="label_2">
-       <property name="font">
-        <font>
-         <pointsize>10</pointsize>
-        </font>
-       </property>
-       <property name="text">
-        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Peak period T&lt;span style=&quot; vertical-align:sub;&quot;&gt;p&lt;/span&gt; [s]&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
-       </property>
-      </widget>
-     </item>
-     <item row="2" column="1">
-      <widget class="QLineEdit" name="Tp_ui">
-       <property name="text">
-        <string>12</string>
-       </property>
-      </widget>
-     </item>
      <item row="3" column="0">
       <widget class="QLabel" name="label_14">
        <property name="text">
@@ -132,6 +132,63 @@
       </widget>
      </item>
      <item row="4" column="0">
+      <widget class="QLabel" name="label_17">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;A (Pierson-Moskowitz)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QLineEdit" name="PM_A_ui">
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="0">
+      <widget class="QLabel" name="label_18">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;B (Pierson-Moskowitz)&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="5" column="1">
+      <widget class="QLineEdit" name="PM_B_ui">
+       <property name="text">
+        <string>1</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="0">
+      <widget class="QLabel" name="label_19">
+       <property name="font">
+        <font>
+         <pointsize>10</pointsize>
+        </font>
+       </property>
+       <property name="text">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;Wave components&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+      </widget>
+     </item>
+     <item row="6" column="1">
+      <widget class="QLineEdit" name="N_ui">
+       <property name="text">
+        <string>100</string>
+       </property>
+      </widget>
+     </item>
+     <item row="7" column="0">
       <widget class="QCheckBox" name="checkBox">
        <property name="layoutDirection">
         <enum>Qt::RightToLeft</enum>
@@ -147,15 +204,28 @@
        </property>
       </widget>
      </item>
+     <item row="7" column="1">
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>134</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
     </layout>
    </widget>
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>340</y>
+      <y>440</y>
       <width>301</width>
-      <height>61</height>
+      <height>57</height>
      </rect>
     </property>
     <property name="font">
@@ -293,9 +363,9 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>540</y>
+      <y>500</y>
       <width>302</width>
-      <height>91</height>
+      <height>87</height>
      </rect>
     </property>
     <property name="font">
@@ -340,10 +410,10 @@
    <widget class="QGroupBox" name="groupBox_5">
     <property name="geometry">
      <rect>
-      <x>20</x>
-      <y>410</y>
+      <x>340</x>
+      <y>100</y>
       <width>301</width>
-      <height>121</height>
+      <height>131</height>
      </rect>
     </property>
     <property name="font">
@@ -474,7 +544,12 @@
        </item>
        <item>
         <property name="text">
-         <string>CSAD</string>
+         <string>CSAD 6DOF 90:1 model</string>
+        </property>
+       </item>
+       <item>
+        <property name="text">
+         <string>CSAD 3DOF 90:1 model</string>
         </property>
        </item>
        <item>
@@ -495,9 +570,9 @@
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>640</y>
+      <y>670</y>
       <width>301</width>
-      <height>120</height>
+      <height>116</height>
      </rect>
     </property>
     <property name="font">
@@ -506,7 +581,7 @@
      </font>
     </property>
     <property name="title">
-     <string>Terminal</string>
+     <string>Log Window</string>
     </property>
     <widget class="QTextEdit" name="output_display">
      <property name="geometry">
@@ -551,11 +626,11 @@ li.checked::marker { content: &quot;\2612&quot;; }
      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;span style=&quot; font-size:28pt; font-style:italic;&quot;&gt;mclsimpy&lt;/span&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
     </property>
    </widget>
-   <widget class="QPushButton" name="run_button">
+   <widget class="QPushButton" name="run_button_ui">
     <property name="geometry">
      <rect>
       <x>20</x>
-      <y>770</y>
+      <y>800</y>
       <width>95</width>
       <height>26</height>
      </rect>
